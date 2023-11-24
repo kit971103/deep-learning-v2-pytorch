@@ -64,7 +64,7 @@ def view_recon(img, recon):
         ax.axis('off')
         ax.set_adjustable('box-forced')
 
-def view_classify(img, ps, version="MNIST"):
+def view_classify(img, ps, version="MNIST", label = None):
     ''' Function for viewing an image and it's predicted classes.
     '''
     ps = ps.data.numpy().squeeze()
@@ -88,7 +88,7 @@ def view_classify(img, ps, version="MNIST"):
                             'Sneaker',
                             'Bag',
                             'Ankle Boot'], size='small');
-    ax2.set_title('Class Probability')
+    ax2.set_title('Class Prob Correct: ' + label)
     ax2.set_xlim(0, 1.1)
 
     plt.tight_layout()
