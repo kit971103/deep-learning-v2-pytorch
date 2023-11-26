@@ -138,3 +138,10 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
+
+intro-to-pytorch/test1/
+intro-to-pytorch/train/
+intro-to-pytorch/test/
+intro-to-pytorch/cats_and_dogs/
+intro-to-pytorch/cat/
+intro-to-pytorch/dog/
